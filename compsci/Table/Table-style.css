@@ -1,0 +1,27 @@
+/*this aligns the deader in the center of the page*/
+h1 {
+    text-align: center;
+}
+
+/*this is collapsing the boarders so there are not any duplicates. and is adding the outside boarder color*/
+table {
+    border-collapse: collapse;
+    }
+
+/*this adds the inner grid color and size*/
+table, th, td {
+    border: 3px solid darkgreen;
+}
+/*this is adding the padding around the text and centering it in the box*/
+td, th {
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
+}
+
+table {
+    border-left: 5px solid black;
+    border-top: 5px solid black;
+    border-bottom: 5px solid dimgray;
+    border-right: 5px solid dimgray;
+}

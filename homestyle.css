@@ -1,0 +1,41 @@
+/* this css stylesheet was created on 1-29-18 for the recipe.html file for CREST freshmen class*/
+
+/*this is where i define all of the default stuff for my document*/
+body {
+    background-color: #2b2b2b;
+    color: #bbbbbb;
+    text-shadow: black;
+    margin-left: 1.25%;
+    margin-right: 1.25%;
+}
+/* I defined what color I wanted my link to be before it has been visited*/
+a:link {
+    color: orange;
+    text-underline: orange;
+}
+/* this defines what color the link should be after it is visited*/
+a:visited {
+    color: red;
+    text-underline: red;
+}
+
+
+h1 {
+    background-color: #3c3f41;
+    color: #c67531;
+}
+
+h2 {
+    background-color: #3c3f41;
+    color: #e7be6a;
+}
+
+h3 {
+    background-color: #3c3f41;
+    color: #6089a9;
+}
+
+article {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}

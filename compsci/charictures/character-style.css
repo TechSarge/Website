@@ -1,0 +1,65 @@
+/* this css stylesheet was created on 1-29-18
+/*this is where i define all of the default stuff for my document*/
+body {
+    background-color: #2b2b2b;
+    color: #bbbbbb;
+    text-shadow: black;
+    margin-left: 1.25%;
+    margin-right: 1.25%;
+    font-family: "palantino Linotype", "monospace";
+}
+/* I defined what color I wanted my link to be before it has been visited*/
+a:link {
+    color: orange;
+    text-underline: orange;
+}
+/* this defines what color the link should be after it is visited*/
+a:visited {
+    color: red;
+    text-underline: red;
+}
+
+
+h1 {
+    background-color: #3c3f41;
+    color: #c67531;
+}
+
+h2 {
+    background-color: #3c3f41;
+    color: #e7be6a;
+}
+
+h3 {
+    background-color: #3c3f41;
+    color: #6089a9;
+}
+/*this only affects the list items that have this class and thus only the females*/
+.female {
+    color: #6089a9;
+}
+
+.male {
+    color: red;
+}
+/*this line is referencing a tag that make the following text bold. that is it.*/
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+/*this is for the list */
+#middlemarch {
+    list-style: upper-roman;
+    padding-left: 80px;
+}
+/*this is only affecting the list items in the middle march list*/
+#middlemarch > li {
+    padding-bottom: 4px;
+}
+
+#taletwocities {
+    list-style: upper-alpha;
+}

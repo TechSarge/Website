@@ -1,0 +1,67 @@
+/* this css stylesheet was created on 1-29-18 for the recipe.html file for CREST freshmen class*/
+
+/*this is where i define all of the default stuff for my document in the body
+the margins are set to 1.25% of the screen it is viewed on so it scales to the device it is on*/
+body {
+    background-color: #2b2b2b;
+    color: #bbbbbb;
+    text-shadow: black;
+    margin-left: 1.25%;
+    margin-right: 1.25%;
+}
+/* I defined what color I wanted my link to be before it has been visited*/
+a:link {
+    color: orange;
+    text-underline: orange;
+}
+/* this defines what color the link should be after it is visited*/
+a:visited {
+    color: red;
+    text-underline: red;
+}
+/*this is boarder for all of my images and it is 5px in size*/
+img {
+    border: 5px solid #94ae58;
+}
+
+/*this is the beginning of the color scheming  and padding for my headers*/
+h1 {
+    padding-left: 5px;
+    background-color: #3c3f41;
+    color: #c67531;
+}
+
+h2 {
+    padding-left: 5px;
+    background-color: #3c3f41;
+    color: #e7be6a;
+}
+
+h3 {
+    padding-left: 5px;
+    background-color: #3c3f41;
+    color: #6089a9;
+}
+/*this is the css for all of my articles every separate recipe is put in a different*/
+article {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+/*this is where i defined the width of the image that is at the end of my html doc*/
+.responsive-image {
+    width: 35%; height: auto;
+}
+
+/*navigation bar css this is in page navigation not site wide navigation*/
+nav {
+    text-align: center;
+}
+
+.navigation-bar-items {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+
+}
+/*end of in page navigation bar*/
+

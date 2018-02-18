@@ -1,0 +1,103 @@
+<!-- My first table -->
+<!-- Table must have:
+#at least 6 rows and 5 columns.
+#Must demonstrate proper use of html and CSS:
+#Have a page header
+#Make it fancy (color/shape)
+Table needs:
+#Header row
+#Text centered
+#Fancy border (color/shape)
+#Sufficient Pseudo code in both HTML & CSS (requirements, reviewer, and enough so that I can see how you did each piece). See my example!!!!
+Picture is NOT required, but if you put one in, you must have ALT, TITLE, and Width set (either in HTML or CSS-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <!--this is the link for the page specific style sheet-->
+    <link rel="stylesheet" type="text/css" href="Table-style.css">
+    <!--this is a link to the default style sheet-->
+    <link rel="stylesheet" type="text/css" href="../../homestyle.css">
+    <!--this is the css file for the site wide navigation bar-->
+    <link rel="stylesheet" type="text/css" href="../../navbar.css">
+</head>
+<!--this element is just for the -->
+<header>
+    <ul id="navbar">
+        <li class="main-navigation-bar-items"><a href="../../index.nginx-debian.html">Home</a></li>
+        <li class="main-navigation-bar-items"><a href="../../about-me/aboutme.html">About Me</a></li>
+        <li class="main-navigation-bar-items"><a href="../../blog/blog.html">Blog</a></li>
+    </ul>
+</header>
+<body>
+    <h1>Table project</h1>
+        <p>This is a Table comparing some capture cards that I was looking at for work. I decided that i should table it for a school project because I already new it so why not.</p>
+        <table>
+            <!--this is the header row-->
+            <tr>
+                <th>capture card</th>
+                <th>price</th>
+                <th>Max resolution</th>
+                <th>Input</th>
+                <th>Output</th>
+                <th>OS support</th>
+            </tr>
+            <!--this is the second row where the data begins-->
+            <tr>
+                <td>Elgato HD60s</td>
+                <td>$159.95</td>
+                <td>1080p60</td>
+                <td>HDMI, 3.5mm</td>
+                <td>HDMI, usb C</td>
+                <td>Windows, Mac (with there software)</td>
+            </tr>
+            <!--elgato cam link-->
+            <tr>
+                <td>Elgato Cam Link</td>
+                <td>$113.95</td>
+                <td>1080p60</td>
+                <td>HDMI</td>
+                <td>USB 3.0 male</td>
+                <td>Windows, Mac, Linux</td>
+            </tr>
+            <!--Magewell USB HDMI-->
+            <tr>
+                <td>Magewell USB HDMI</td>
+                <td>$299</td>
+                <td>1080p60</td>
+                <td>HDMI</td>
+                <td>USB 3.0</td>
+                <td>Windows, Mac, Linux</td>
+            </tr>
+            <!--av.io HD-->
+            <tr>
+                <td>av.io HD</td>
+                <td>$399.95</td>
+                <td>1080p60</td>
+                <td>DVI</td>
+                <td>USB 3.0</td>
+                <td>Windows, Linux, Mac</td>
+            </tr>
+            <!--BLackmagic Ultra studio mini recorder-->
+            <tr>
+                <td>Blackmagic Ultra studio mini recorder</td>
+                <td>$145</td>
+                <td>1080p30</td>
+                <td>HDMI, SDI</td>
+                <td>Thunderbolt 2</td>
+                <td>Windows, Mac</td>
+            </tr>
+            <!--blackmagic intensity shuttle-->
+            <tr>
+                <td>Blackmagic Intensity Shuttle</td>
+                <td>$199</td>
+                <td>1080i60</td>
+                <td>HDMI, component, composite</td>
+                <td>USB 3.0 or thunderbolt</td>
+                <td>Windows, Mac</td>
+            </tr>
+        </table>
+</body>
+</html>
