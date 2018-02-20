@@ -11,32 +11,38 @@ Table needs:
 #Sufficient Pseudo code in both HTML & CSS (requirements, reviewer, and enough so that I can see how you did each piece). See my example!!!!
 Picture is NOT required, but if you put one in, you must have ALT, TITLE, and Width set (either in HTML or CSS-->
 <!--V2 Requirements-->
-
+<!--#Add an audio file
+#Add iframe with video
+#Add iframe with website of topic of table.
+#In CSS set border and size of iframes.
+#Add paragraphs between items to describe what is showing below or what to do.
+#In CSS style paragraphs.-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Table</title>
-    <!--this is the link for the page specific style sheet-->
-    <link rel="stylesheet" type="text/css" href="Table-style.css">
-    <!--this is a link to the default style sheet-->
-    <link rel="stylesheet" type="text/css" href="../../homestyle.css">
-    <!--this is the css file for the site wide navigation bar-->
-    <link rel="stylesheet" type="text/css" href="../../navbar.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Table</title>
+        <!--this is the link for the page specific style sheet-->
+        <link rel="stylesheet" type="text/css" href="Table-style.css">
+        <!--this is a link to the default style sheet-->
+        <link rel="stylesheet" type="text/css" href="../../homestyle.css">
+        <!--this is the css file for the site wide navigation bar-->
+        <link rel="stylesheet" type="text/css" href="../../navbar.css">
+    </head>
 <!--this element is just for the -->
-<header>
-    <ul id="navbar">
-        <li class="main-navigation-bar-items"><a href="../../index.nginx-debian.html">Home</a></li>
-        <li class="main-navigation-bar-items"><a href="../../about-me/aboutme.html">About Me</a></li>
-        <li class="main-navigation-bar-items"><a href="../../blog/blog.html">Blog</a></li>
-    </ul>
-</header>
+    <header>
+        <ul id="navbar">
+            <li class="main-navigation-bar-items"><a href="../../index.nginx-debian.html">Home</a></li>
+            <li class="main-navigation-bar-items"><a href="../../about-me/aboutme.html">About Me</a></li>
+            <li class="main-navigation-bar-items"><a href="../../blog/blog.html">Blog</a></li>
+        </ul>
+    </header>
 <body>
     <h1>Table project</h1>
         <p>This is a Table comparing some capture cards that I was looking at for work. I decided that i should table it for a school project because I already new it so why not.</p>
         <table>
             <!--this is the header row-->
+            <thead>
             <tr>
                 <th>capture card</th>
                 <th>price</th>
@@ -45,60 +51,83 @@ Picture is NOT required, but if you put one in, you must have ALT, TITLE, and Wi
                 <th>Output</th>
                 <th>OS support</th>
             </tr>
+            </thead>
             <!--this is the second row where the data begins-->
-            <tr>
-                <td>Elgato HD60s</td>
-                <td>$159.95</td>
-                <td>1080p60</td>
-                <td>HDMI, 3.5mm</td>
-                <td>HDMI, usb C</td>
-                <td>Windows, Mac (with there software)</td>
-            </tr>
-            <!--elgato cam link-->
-            <tr>
-                <td>Elgato Cam Link</td>
-                <td>$113.95</td>
-                <td>1080p60</td>
-                <td>HDMI</td>
-                <td>USB 3.0 male</td>
-                <td>Windows, Mac, Linux</td>
-            </tr>
-            <!--Magewell USB HDMI-->
-            <tr>
-                <td>Magewell USB HDMI</td>
-                <td>$299</td>
-                <td>1080p60</td>
-                <td>HDMI</td>
-                <td>USB 3.0</td>
-                <td>Windows, Mac, Linux</td>
-            </tr>
-            <!--av.io HD-->
-            <tr>
-                <td>av.io HD</td>
-                <td>$399.95</td>
-                <td>1080p60</td>
-                <td>DVI</td>
-                <td>USB 3.0</td>
-                <td>Windows, Linux, Mac</td>
-            </tr>
-            <!--BLackmagic Ultra studio mini recorder-->
-            <tr>
-                <td>Blackmagic Ultra studio mini recorder</td>
-                <td>$145</td>
-                <td>1080p30</td>
-                <td>HDMI, SDI</td>
-                <td>Thunderbolt 2</td>
-                <td>Windows, Mac</td>
-            </tr>
-            <!--blackmagic intensity shuttle-->
-            <tr>
-                <td>Blackmagic Intensity Shuttle</td>
-                <td>$199</td>
-                <td>1080i60</td>
-                <td>HDMI, component, composite</td>
-                <td>USB 3.0 or thunderbolt</td>
-                <td>Windows, Mac</td>
-            </tr>
+            <tbody>
+                <tr>
+                    <td>Elgato HD60s</td>
+                    <td>$159.95</td>
+                    <td>1080p60</td>
+                    <td>HDMI, 3.5mm</td>
+                    <td>HDMI, usb C</td>
+                    <td>Windows, Mac (with there software)</td>
+                </tr>
+                <!--elgato cam link-->
+                <tr>
+                    <td>Elgato Cam Link</td>
+                    <td>$113.95</td>
+                    <td>1080p60</td>
+                    <td>HDMI</td>
+                    <td>USB 3.0 male</td>
+                    <td>Windows, Mac, Linux</td>
+                </tr>
+                <!--Magewell USB HDMI-->
+                <tr>
+                    <td>Magewell USB HDMI</td>
+                    <td>$299</td>
+                    <td>1080p60</td>
+                    <td>HDMI</td>
+                    <td>USB 3.0</td>
+                    <td>Windows, Mac, Linux</td>
+                </tr>
+                <!--av.io HD-->
+                <tr>
+                    <td>av.io HD</td>
+                    <td>$399.95</td>
+                    <td>1080p60</td>
+                    <td>DVI</td>
+                    <td>USB 3.0</td>
+                    <td>Windows, Linux, Mac</td>
+                </tr>
+                <!--BLackmagic Ultra studio mini recorder-->
+                <tr>
+                    <td>Blackmagic Ultra studio mini recorder</td>
+                    <td>$145</td>
+                    <td>1080p30</td>
+                    <td>HDMI, SDI</td>
+                    <td>Thunderbolt 2</td>
+                    <td>Windows, Mac</td>
+                </tr>
+                <!--blackmagic intensity shuttle-->
+                <tr>
+                    <td>Blackmagic Intensity Shuttle</td>
+                    <td>$199</td>
+                    <td>1080i60</td>
+                    <td>HDMI, component, composite</td>
+                    <td>USB 3.0 or thunderbolt</td>
+                    <td>Windows, Mac</td>
+                </tr>
+            </tbody>
+
+
         </table>
+    <!--this is the end of the table-->
+    <h2>This is what a capture card is and how to set one up</h2>
+    <p>This page not only explains what a capture card is but also shows you how most people have there capture cards setup</p>
+
+    <!--this is where the iframe for the website about shat a capture card is-->
+        <iframe class="iframe-website" src="https://filmora.wondershare.com/screen-recorder/introduction-to-capture-card.html"></iframe>
+
+    <!--this is the youtube video I coped everything accept the class from the youtube site-->
+    <p>This is a video where someone compares software with hardware capture cards.</p>
+        <iframe class="iframe-video"  allowfullscreen src="https://www.youtube.com/embed/tAdefhx6QS8"></iframe>
+
+    <p>Here is some audio of feedback. (you might want to turn down your speakers). In the audio world when this happens you are not having a good bay because usually something bad is happening and you are going to get yelled at.</p>
+
+    <!--this is where I add the audio file with a redundant file and the controls for the audio-->
+        <audio controls>
+            <source src="assets/feedback.wav" type="audio/wav">
+            <source src="assets/feedback.mp3" type="audio/mpeg">
+        </audio>
 </body>
 </html>

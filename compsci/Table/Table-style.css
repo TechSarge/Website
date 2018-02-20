@@ -1,28 +1,54 @@
 
-/*this aligns the deader in the center of the page*/
+/*this aligns the header in the center of the page*/
 h1 {
     text-align: center;
 }
 
 /*this is collapsing the boarders so there are not any duplicates. and is adding the outside boarder color*/
 table {
-    border-collapse: collapse;
-    }
+    border-spacing: 0.5em;
+    background-color: blue;
+}
 
 /*this adds the inner grid color and size*/
 table, th, td {
-    border: 3px solid darkgreen;
+    border: .25em solid darkgreen;
 }
 /*this is adding the padding around the text and centering it in the box*/
 td, th {
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: .75em;
+    padding-right: .75em;
     text-align: center;
 }
-
-table {
-    border-left: 5px solid black;
-    border-top: 5px solid black;
-    border-bottom: 5px solid dimgray;
-    border-right: 5px solid dimgray;
+/*this is the background for all the table headers*/
+th {
+    background-color: #2b2b2b;
+}
+/*this makes all the even rows in the table have the same background color*/
+tr:nth-child(even) {
+    background-color: darkblue;
+}
+/*this makes all the odd rows in the table accept for the table header have the ame background*/
+tr:nth-child(odd) {
+    background-color: dimgray;
+}
+/*this changes the row color when a mouse hovers over it*/
+tr:hover {
+    background-color: darkgreen;
+}
+/*this is where I change the size and remove the border of the iframe containing the website*/
+.iframe-website {
+    width: 75%;
+    height: 600px;
+    border-width: 0;
+}
+/*this is where I change the size and remove the border for the youtube video*/
+.iframe-video {
+    width: 854px;
+    height: 480px;
+    border-width: 0;
+}
+/*this is where I add padding to the bottom of the audio controls*/
+audio {
+    padding-bottom: 50px;
 }
