@@ -1,0 +1,12 @@
+/*this is to align the large wording after the video to the center of the page*/
+.center {
+    text-align: center;
+}
+
+video {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
