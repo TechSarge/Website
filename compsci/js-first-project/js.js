@@ -7,7 +7,7 @@ function boom() {
 //this is the first part of the function which adds the video to the page
 function boompt1() {
     document.body.innerHTML +="<video width=\"100%\" height=\"100%\" autoplay loop>\n" +
-        "        <source src=\"videoplayback.mp4\">\n" +
+        "        <source src=\"bombvideo.mp4\">\n" +
         "    </video>"
 }
 //this is the second part of the function which adds the words under the video.

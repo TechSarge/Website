@@ -1,0 +1,22 @@
+/*this is to align the large wording after the video to the center of the page*/
+.center {
+    text-align: center;
+}
+/*this makes sure that the video is the size of the computer screen*/
+video {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+/*this makes the button look fancy*/
+button {
+    background-color: red;
+    color: black;
+    text-align: center;
+    padding: 15px 32px;
+    border: none;
+    border-radius: 20px;
+    font-size: 50px;
+}
