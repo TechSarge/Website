@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3rd JS Project</title>
+    <!--this is the default style sheet for my website-->
+    <link rel="stylesheet"
+          type="text/css"
+          href="../../homestyle.css">
+
+    <!--this is the stylesheet for my site wide navigation bar-->
+    <link rel="stylesheet"
+          type="text/css"
+          href="../../navbar.css">
+
+    <!--this is teh stylesheet for this specific page-->
+    <link rel="stylesheet"
+          type="text/css"
+          href="3rd-JS-style.css">
+    <script src="fourm.js"></script>
+</head>
+<!--this is where the site wide navigation bar is setup-->
+<header>
+    <ul id="navbar">
+        <li class="main-navigation-bar-items"><a href="../../index.nginx-debian.html">Home</a></li>
+        <li class="main-navigation-bar-items"><a href="../../about-me/aboutme.html">About Me</a></li>
+        <li class="main-navigation-bar-items"><a href="../../blog/blog.html">Blog</a></li>
+    </ul>
+</header>
+
+<body>
+    <h1>Welcome to my first forum</h1>
+<p>please fill out the forum to see the results</p>
+    <!--this is where the forum is specified for the page-->
+    <form>
+        <!--these are all the input fields-->
+        First name:<br>
+        <input id="inputfirstname" type="text" name="firstname"><br>
+        Last name:<br>
+        <input id="inputlastname" type="text" name="lastname"><br>
+        pick a whole number:<br>
+        <input id="inputnumber" type="text" name="number"><br>
+        pick another number:<br>
+        <input id="inputnumber2" type="text" name="number2">
+    </form>
+    <!--this is the submit button that calls the javascript function-->
+    <button onclick="output()">Submit</button>
+    <!--this is where the function is outputted-->
+<p id="result"></p>
+</body>
+</html>
