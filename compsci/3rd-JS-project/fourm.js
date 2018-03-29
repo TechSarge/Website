@@ -7,6 +7,12 @@ function output() {
     let inputnumber = document.getElementById('inputnumber').value;
     //this grabs the second number to be manipulated later
     let inputnumber2 = document.getElementById('inputnumber2').value;
+
+    //this sections purpose is to make sure that javascript thinks the the number input fields are numbers!!!!!!!!!!!!!
+    inputnumber = inputnumber*2/2;
+    inputnumber2 = inputnumber2*2/2;
+
+
     //this adds the two numbers together
     let numtotal = inputnumber + inputnumber2;
     //this finds the square root of the previous number
