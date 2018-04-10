@@ -1,0 +1,71 @@
+<!--Requirements:All previous best practices must be included.
+Requirements: Copy your JS 3 code and add to it.
+Assignment will have a creativity component. If yours is just mine with tweaks, the best you can earn is a 75%. You need to do MORE than I did to get a 100%.
+Create at least 5 user input fields to request data (one prompt and at least four fill-in the blanks.)
+Write collected data back to website upon hitting Submit button (this implies you need a button!)
+Make it look good, user friendly, clear instructions/expectations.
+Creativity is expected.
+Be sure to "comment" your code (all areas) thoroughly.
+Reviewer:
+<!DOCTYPE html>
+<!--begins html and sets language-->
+<html lang="en">
+<head>
+    <!--sets universal character set-->
+    <meta charset="UTF-8">
+    <!--title of webpage-->
+    <title>3th Javascript Exercise</title>
+    <!-- links to CSS stylesheet (.css)-->
+
+    <link rel="stylesheet" href="../../homestyle.css">
+
+    <link rel="stylesheet" href="../../navbar.css">
+
+    <link rel="stylesheet" href="4th-JS-style.css">
+    <!-- links to JavaScript file(s) (.js)-->
+    <script src="javascript.js"></script>
+
+</head>
+
+<header>
+    <ul id="navbar">
+        <li class="main-navigation-bar-items"><a href="../../index.nginx-debian.html">Home</a></li>
+        <li class="main-navigation-bar-items"><a href="../../about-me/aboutme.html">About Me</a></li>
+        <li class="main-navigation-bar-items"><a href="../../blog/blog.html">Blog</a></li>
+    </ul>
+</header>
+
+
+<!--body of webpage-->
+<body>
+<!--page title-->
+<h1>Tell me a little about yourself</h1>
+<!-- write one of the responses - the one based on your test of input -->
+<p id = "response"> </p>
+
+<!--write your instructions for the user-->
+<ol>
+    <li>Please fill out the fields.</li>
+    <li>Then hit submit!</li></ol>
+<!--defining boxes for input of data -->
+<br>
+favorite food: <br> <input type="text" id="food"/>
+<br>
+Pick a number any Number: <br> <input type="text" id="number"/>
+<br>
+Favorite Movie: <br> <input type="text" id="movie"/>
+<br>
+where do you work (If you do not work leave it blank): <br> <input type="text" id="work"/>
+<br>
+<!--defining the clickable button -->
+<button onclick="output()">Submit!</button>
+<br/>
+<!--the paragraph where the result of user input will display -->
+<p id="result"></p>
+
+<p id="workput"></p>
+
+<p id="attemptsout"></p>
+
+</body>
+</html>
