@@ -22,7 +22,7 @@ function output()
     let attemptsST = attempts.toString();
 
     //displays the paragraph to the user by using the data that was entered
-    document.getElementById('result').innerHTML= 'Your favorite food is: ' + inputFood + ', The number you chose is ' + inputNumber + ', your favorite movie is ' + inputMovie + '.';
+    document.getElementById('result').innerHTML= 'Your favorite food is ' + inputFood + '. The number you chose is ' + inputNumber + '. Your favorite movie is ' + inputMovie + '.';
 
     //this is the if statement that says if the field is blank then call the first part if it is not call the second part
     if (attempts === 1) {
@@ -34,6 +34,7 @@ function output()
 //this makes sure that the second part of the function is called
 outputPT2()
 }
+
 //this is the second function because javascript did not like having one if statement right after another so i brock it up
 function outputPT2() {
     //this grabs the data of the user input field work
@@ -47,3 +48,4 @@ function outputPT2() {
         document.getElementById('workout').innerHTML = 'Good for you, you work at ' + inputWork + '.';
     }
 }
+

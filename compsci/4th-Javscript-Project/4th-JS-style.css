@@ -1,6 +1,7 @@
 /*this just makes the font a little bigger for the lines above teh text boxes*/
 form {
     font-weight: bold;
+
 }
 /*this changes the test fields to look the way that they do*/
 input {
@@ -8,6 +9,7 @@ input {
     color: black;
     font-size: medium;
     margin-left: 6px;
+    margin-top: 4px;
 }
 /*this moves the button down and to the right some so the page does not seem as cramped*/
 button {
