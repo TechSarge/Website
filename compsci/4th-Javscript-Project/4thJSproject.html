@@ -6,7 +6,7 @@ Write collected data back to website upon hitting Submit button (this implies yo
 Make it look good, user friendly, clear instructions/expectations.
 Creativity is expected.
 Be sure to "comment" your code (all areas) thoroughly.
-Reviewer:
+Reviewer: i finished the project to late last night so no one reviewed the project
 <!DOCTYPE html>
 <!--begins html and sets language-->
 <html lang="en">
@@ -14,19 +14,16 @@ Reviewer:
     <!--sets universal character set-->
     <meta charset="UTF-8">
     <!--title of webpage-->
-    <title>3th Javascript Exercise</title>
+    <title>4th Javascript Exercise</title>
     <!-- links to CSS stylesheet (.css)-->
-
     <link rel="stylesheet" href="../../homestyle.css">
-
+<!--this links to the css file for the site wide navigation bar-->
     <link rel="stylesheet" href="../../navbar.css">
-
-    <link rel="stylesheet" href="4th-JS-style.css">
-    <!-- links to JavaScript file(s) (.js)-->
+    <!-- links to JavaScript file-->
     <script src="javascript.js"></script>
 
 </head>
-
+<!--This is for the site wide navigation bar-->
 <header>
     <ul id="navbar">
         <li class="main-navigation-bar-items"><a href="../../index.nginx-debian.html">Home</a></li>
@@ -35,10 +32,7 @@ Reviewer:
     </ul>
 </header>
 
-
-<!--body of webpage-->
 <body>
-<!--page title-->
 <h1>Tell me a little about yourself</h1>
 <!-- write one of the responses - the one based on your test of input -->
 <p id = "response"> </p>
@@ -46,26 +40,36 @@ Reviewer:
 <!--write your instructions for the user-->
 <ol>
     <li>Please fill out the fields.</li>
-    <li>Then hit submit!</li></ol>
+    <li>Then hit submit!</li>
+</ol>
+
 <!--defining boxes for input of data -->
 <br>
-favorite food: <br> <input type="text" id="food"/>
+favorite food: <br>
+    <input type="text" id="food"/>
 <br>
-Pick a number any Number: <br> <input type="text" id="number"/>
+
+Pick a number any Number: <br>
+    <input type="text" id="number"/>
 <br>
-Favorite Movie: <br> <input type="text" id="movie"/>
+
+Favorite Movie: <br>
+    <input type="text" id="movie"/>
 <br>
-where do you work (If you do not work leave it blank): <br> <input type="text" id="work"/>
+
+where do you work (If you do not work leave it blank): <br>
+    <input type="text" id="work"/>
 <br>
-<!--defining the clickable button -->
+<!--This is the submit button that calles the output function defined in javascript.js -->
 <button onclick="output()">Submit!</button>
 <br/>
 <!--the paragraph where the result of user input will display -->
-<p id="result"></p>
 
-<p id="workput"></p>
-
-<p id="attemptsout"></p>
-
+<!--this is the basic result from food number and movie-->
+    <p id="result"></p>
+<!--this is where the work result is returned-->
+    <p id="workout"></p>
+<!--this is where the popup data is returned-->
+    <p id="attemptsout"></p>
 </body>
 </html>
