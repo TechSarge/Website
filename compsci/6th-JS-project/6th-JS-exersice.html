@@ -8,7 +8,7 @@ Reviewed by: -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>JavaScript Events and "this" Assignment</title>
+    <title>6th Javascript assignment</title>
     <meta charset="utf-8"/>
     <!--Linking CSS and JavaScript -->
     <link rel="stylesheet" href="6th-JS-exercise.css">
@@ -23,26 +23,34 @@ Reviewed by: -->
           href="../../navbar.css">
 
     <script src="6th-JS.js"></script>
+
+    <header>
+        <ul id="navbar">
+            <li class="main-navigation-bar-items"><a href="../../index.nginx-debian.html">Home</a></li>
+            <li class="main-navigation-bar-items"><a href="../../about-me/aboutme.html">About Me</a></li>
+            <li class="main-navigation-bar-items"><a href="../../blog/blog.html">Blog</a></li>
+        </ul>
+    </header>
 </head>
-<!--this is the actual content of the page -->
+<!--this is the actual content of the page-->
     <body>
-        <h1>Welcome to my 6th Javascript Project</h1>
+        <h1 class="center">Welcome to my 6th Javascript Project</h1>
     <br>
-    <!--paragraph where alt tag will appear when hovering over specific picture -->
-        <h2 id='message'></h2>
+        <!--this is where the output from the "alt tags" are displayed-->
+        <h2 id="msgOut"></h2>
     <br>
 
-    <!--div containing dog pictures (used for text-align purposes) -->
-        <div id="images">
-            <!--labrador image with onload, onmouseleave, and onmouseover -->
+    <!--div containing the images and used for the aligning the images to the center -->
+        <div class="center">
+            <!--this is the first image -->
             <img class="images" src="assets/big-rocket.jpg" alt="This is the largest Rocket I have ever built." title="big rocket" width="31%" onload="document.getElementById('message').innerHTML ='Hello, please hover your cursor over one of the images below';" onmouseover="showAlt(this)" onmouseleave="document.getElementById('message').innerHTML ='Please hover over another image to see more!';"/>
-            <!--mastiff image with onload, onmouseleave, and onmouseover -->
+            <!--this is the second image of a ground prong hangout out of a plug -->
             <img class="images" src="assets/nose-plug.jpg" alt="Someone at work left the ground pin in the socket." title="left behind ground plug" width="31%" onload="document.getElementById('message').innerHTML ='Hello, please hover your cursor over one of the images below';" onmouseover="showAlt(this)" onmouseleave="document.getElementById('message').innerHTML ='Please hover over another image to see more!';"/>
-            <!--german shepard image with onload, onmouseleave, and onmouseover-->
+            <!--this is the third picture of a speed sign that says 7 and a half miles per an hour-->
             <img class="images" src="assets/speed-sign.jpg" alt="I did not know that speed signs got that specific before now." title="7.5 mph speed sign" width="31%" onload="document.getElementById('message').innerHTML ='Hello, please hover your cursor over one of the images below';" onmouseover="showAlt(this)" onmouseleave="document.getElementById('message').innerHTML ='Please hover over another image to see more!';"/>
         </div>
 
-    <h3>Thank you for viewing this webpage</h3>
+    <h3 class="center">Thank you for viewing this webpage</h3>
 
     </body>
 
