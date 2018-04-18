@@ -1,0 +1,50 @@
+<!--Requirements:
+1. Use at least 3 images
+2. Use the onload, onmouseleave, and onmouseover to display a message in the html that the user can see when cursor hovers over an image
+3. All images must link to only ONE javascript function (by using "this")
+4. All past best practices apply (psuedo code, make it look nice, etc.)
+5. Get your code reviewed!
+Reviewed by: -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript Events and "this" Assignment</title>
+    <meta charset="utf-8"/>
+    <!--Linking CSS and JavaScript -->
+    <link rel="stylesheet" href="6th-JS-exercise.css">
+    <title>5th Javascript exercise</title>
+
+    <!-- links to CSS stylesheet (.css)-->
+    <link rel="stylesheet"
+          href="../../homestyle.css">
+
+    <!--this links to the css file for the site wide navigation bar-->
+    <link rel="stylesheet"
+          href="../../navbar.css">
+
+    <script src="6th-JS.js"></script>
+</head>
+<!--this is the actual content of the page -->
+    <body>
+        <h1>Welcome to my 6th Javascript Project</h1>
+    <br>
+    <!--paragraph where alt tag will appear when hovering over specific picture -->
+        <h2 id='message'></h2>
+    <br>
+
+    <!--div containing dog pictures (used for text-align purposes) -->
+        <div id="images">
+            <!--labrador image with onload, onmouseleave, and onmouseover -->
+            <img class="images" src="assets/big-rocket.jpg" alt="This is the largest Rocket I have ever built." title="big rocket" width="31%" onload="document.getElementById('message').innerHTML ='Hello, please hover your cursor over one of the images below';" onmouseover="showAlt(this)" onmouseleave="document.getElementById('message').innerHTML ='Please hover over another image to see more!';"/>
+            <!--mastiff image with onload, onmouseleave, and onmouseover -->
+            <img class="images" src="assets/nose-plug.jpg" alt="Someone at work left the ground pin in the socket." title="left behind ground plug" width="31%" onload="document.getElementById('message').innerHTML ='Hello, please hover your cursor over one of the images below';" onmouseover="showAlt(this)" onmouseleave="document.getElementById('message').innerHTML ='Please hover over another image to see more!';"/>
+            <!--german shepard image with onload, onmouseleave, and onmouseover-->
+            <img class="images" src="assets/speed-sign.jpg" alt="I did not know that speed signs got that specific before now." title="7.5 mph speed sign" width="31%" onload="document.getElementById('message').innerHTML ='Hello, please hover your cursor over one of the images below';" onmouseover="showAlt(this)" onmouseleave="document.getElementById('message').innerHTML ='Please hover over another image to see more!';"/>
+        </div>
+
+    <h3>Thank you for viewing this webpage</h3>
+
+    </body>
+
+
+</html>

@@ -1,0 +1,35 @@
+/*
+
+!*styling for image borders*!
+.images {
+    border: solid black 10px;
+}
+!*styling for message that appears*!
+#message {
+    border: solid green 6px;
+    text-align: center;
+    background-color: tan;
+    padding: 15px;
+    font-family: arial;
+    font-weight: bold;
+}
+*/
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+#images {
+    text-align: center;
+}
+
+.images {
+    border: solid orange 5px;
+}
+
