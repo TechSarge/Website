@@ -4,17 +4,17 @@
 3. All images must link to only ONE javascript function (by using "this")
 4. All past best practices apply (psuedo code, make it look nice, etc.)
 5. Get your code reviewed!
-Reviewed by: -->
+Reviewed by: Connor Q.-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>6th Javascript assignment</title>
     <meta charset="utf-8"/>
-    <!--Linking CSS and JavaScript -->
-    <link rel="stylesheet" href="6th-JS-exercise.css">
-    <title>5th Javascript exercise</title>
 
-    <!-- links to CSS stylesheet (.css)-->
+    <title>6th Javascript exercise</title>
+    <!--Linking CSS-->
+    <link rel="stylesheet" href="6th-JS-exercise.css">
+    <!-- default stylesheet-->
     <link rel="stylesheet"
           href="../../homestyle.css">
 
@@ -24,35 +24,38 @@ Reviewed by: -->
 
     <script src="6th-JS.js"></script>
 
-    <header>
-        <ul id="navbar">
-            <li class="main-navigation-bar-items"><a href="../../index.nginx-debian.html">Home</a></li>
-            <li class="main-navigation-bar-items"><a href="../../about-me/aboutme.html">About Me</a></li>
-            <li class="main-navigation-bar-items"><a href="../../blog/blog.html">Blog</a></li>
-        </ul>
-    </header>
+
 </head>
-<!--this is the actual content of the page-->
-    <body>
-        <h1 class="center">Welcome to my 6th Javascript Project</h1>
-    <br>
-        <!--this is where the output from the "alt tags" are displayed-->
-        <h2 id="msgOut"></h2>
-    <br>
+<!--this is the site wide navigation bar-->
+<header>
+    <ul id="navbar">
+        <li class="main-navigation-bar-items"><a href="../../index.nginx-debian.html">Home</a></li>
+        <li class="main-navigation-bar-items"><a href="../../about-me/aboutme.html">About Me</a></li>
+        <li class="main-navigation-bar-items"><a href="../../blog/blog.html">Blog</a></li>
+    </ul>
+</header>
 
-    <!--div containing the images and used for the aligning the images to the center -->
-        <div class="center">
-            <!--this is the first image -->
-            <img class="images" src="assets/big-rocket.jpg" alt="This is the largest Rocket I have ever built." title="big rocket" width="31%" onload="document.getElementById('message').innerHTML ='Hello, please hover your cursor over one of the images below';" onmouseover="showAlt(this)" onmouseleave="document.getElementById('message').innerHTML ='Please hover over another image to see more!';"/>
-            <!--this is the second image of a ground prong hangout out of a plug -->
-            <img class="images" src="assets/nose-plug.jpg" alt="Someone at work left the ground pin in the socket." title="left behind ground plug" width="31%" onload="document.getElementById('message').innerHTML ='Hello, please hover your cursor over one of the images below';" onmouseover="showAlt(this)" onmouseleave="document.getElementById('message').innerHTML ='Please hover over another image to see more!';"/>
-            <!--this is the third picture of a speed sign that says 7 and a half miles per an hour-->
-            <img class="images" src="assets/speed-sign.jpg" alt="I did not know that speed signs got that specific before now." title="7.5 mph speed sign" width="31%" onload="document.getElementById('message').innerHTML ='Hello, please hover your cursor over one of the images below';" onmouseover="showAlt(this)" onmouseleave="document.getElementById('message').innerHTML ='Please hover over another image to see more!';"/>
-        </div>
+<!--this is where the actual content begins -->
+<body>
+<h1 class="center">Welcome to my 6th Javascript Project</h1>
+<br>
+<!--this is where the output from the "alt tags" are displayed-->
+<h2 class="center" id="msgOut"> </h2>
+<br>
 
-    <h3 class="center">Thank you for viewing this webpage</h3>
+<!--div containing the images and used for the aligning the images to the center of the page-->
+<div class="center">
+    <!--this is the first image that shows a rocket-->
+    <img class="images" src="assets/big-rocket.jpg" alt="This is the largest Rocket I have ever built." title="big rocket" width="31%" onload="document.getElementById('msgOut').innerHTML ='Hello, please hover your cursor over one of the images below';" onmouseover="showAlt(this)" onmouseleave="document.getElementById('msgOut').innerHTML ='Please hover over another image to see more!';"/>
+    <!--this is the second image of a ground prong hangout out of a plug -->
+    <img class="images" src="assets/nose-plug.jpg" alt="Someone at work left the ground pin in the socket." title="left behind ground plug" width="31%" onload="document.getElementById('msgOut').innerHTML ='Hello, please hover your cursor over one of the images below';" onmouseover="showAlt(this)" onmouseleave="document.getElementById('msgOut').innerHTML ='Please hover over another image to see more!';"/>
+    <!--this is the third picture of a speed sign that says 7 and a half miles per an hour-->
+    <img class="images" src="assets/speed-sign.jpg" alt="I did not know that speed signs got that specific before now." title="7.5 mph speed sign" width="31%" onload="document.getElementById('msgOut').innerHTML ='Hello, please hover your cursor over one of the images below';" onmouseover="showAlt(this)" onmouseleave="document.getElementById('msgOut').innerHTML ='Please hover over another image to see more!';"/>
+</div>
 
-    </body>
+<h3 class="center">Thank you for viewing this webpage</h3>
+
+</body>
 
 
 </html>

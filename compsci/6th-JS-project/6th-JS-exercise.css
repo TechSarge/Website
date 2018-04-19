@@ -1,11 +1,12 @@
-
+/*this aligns the images to the center of the page*/
 #images {
     text-align: center;
 }
-
+/*this creates a solid border that is orenge around the images*/
 .images {
     border: solid orange 5px;
 }
+/*this centers anything that I want centered. used for my text*/
 .center {
     text-align: center;
 }
