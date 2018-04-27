@@ -1,3 +1,5 @@
+/*this is the css file for 7thJS project*/
+/*in the body tag I changed the text color and the background color also moved the pargins in some*/
 body {
     background-color: #2b2b2b;
     color: #bbbbbb;
@@ -5,17 +7,17 @@ body {
     margin-left: 1.25%;
     margin-right: 1.25%;
 }
-
+/*this changes the color and background color for all the h1 tags*/
 h1 {
     background-color: #3c3f41;
     color: #c67531;
 }
-
+/*this changes the color and background color for the h2 tags*/
 h2 {
     background-color: #3c3f41;
     color: #e7be6a;
 }
-
+/*This makes the button fancy by changing the colors making the edges round and changing the font*/
 button {
     background-color: orange;
     color: black;

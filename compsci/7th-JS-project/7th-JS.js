@@ -5,7 +5,7 @@ function musicianOutput() {
     //this displays the contents of the array musicians to the user
     document.getElementById('musiciansNames').innerHTML = musicians;
     //this outputs the array and more informantion to the console
-    console.log("Musicians array informantion" + musicians);
+    console.log("Musicians array informantion " + musicians);
     //this ouptuts the last item in the array to the console
     console.log('The last name entered into the array is - ' + musicians[musicians.length -1]);
 }
