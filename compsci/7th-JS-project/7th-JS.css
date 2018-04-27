@@ -1,0 +1,28 @@
+body {
+    background-color: #2b2b2b;
+    color: #bbbbbb;
+    text-shadow: black;
+    margin-left: 1.25%;
+    margin-right: 1.25%;
+}
+
+h1 {
+    background-color: #3c3f41;
+    color: #c67531;
+}
+
+h2 {
+    background-color: #3c3f41;
+    color: #e7be6a;
+}
+
+button {
+    background-color: orange;
+    color: black;
+    text-align: center;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 35px;
+    font-family: "palantino Linotype", "monospace";
+}

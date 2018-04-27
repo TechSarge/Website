@@ -1,0 +1,31 @@
+<!--Requirements:
+1. Define and initialize an array with at least 5 elements
+2. Define and initialize a function to output contents of array to page
+3. Define and intialize a function to ask for new element to be added
+4. Use the PUSH to append new element to end of existing array
+5. Using Console.log output elements to console to verify successful add.
+6. Document with pseudo code (HTML, CSS & JS)
+7. You may NOT reuse previous codepen - must be new code
+8. Reviewed by: -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>7th javascript project</title>
+<!--this is the link to the only stylesheet for this page -->
+    <link rel="stylesheet" type="text/css" href="7th-JS.css">
+<!--this is the link to the javascript file for this page-->
+    <script src="7th-JS.js"></script>
+</head>
+<!--this loads the array for the first time-->
+<body onload="musicianOutput()">
+    <h1>favorite bands</h1>
+
+    <h2>These are some of my favorite bands. Fell free to add your own using the button below.</h2>
+<!--this button calls the function addFav which allows the user to add a musician to the list-->
+    <button onclick="addFav()">Click to add a musician</button>
+    <!--this is where the output from the array is displayed to the user-->
+<p id="musiciansNames"></p>
+
+</body>
+</html>
