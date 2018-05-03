@@ -1,0 +1,30 @@
+<!--Requirements:
+1. Combine what you know about arrays and For Loops.
+2. Define and itialize an array with at least 5 elements.
+3. Calculate the average (or if not using numbers, build a story...something using the elements)
+4. Push/add a new element to the array
+5. Recalculate the average (or update the story, etc)
+Note, when you input a new value it is stored as a string unless you use the parseInt command to turn it into a number...see the code example.
+All best practices
+Reviewer: Connor Q-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>8th Javascript exercise</title>
+    <script src="8th-JS.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../homestyle.css">
+</head>
+<!--this makes sure that when the page loads that the heights in the array are displayed-->
+<body onload="heightsOut()">
+    <h1>Welcome to my height average calculator</h1>
+    <h2>These are the heights in inches</h2>
+    <!--this is where each individual height is displayed to the user-->
+    <p id="heights"></p>
+    <!--this is where the average height is displayed to the user-->
+    <p id="avgHeight"></p>
+        <h2>Please click the button to add someones height.</h2>
+    <!--this button calls the function addheight defined in 8th-JS.js file -->
+    <button onclick="addHeight()">Add height</button>
+</body>
+</html>
